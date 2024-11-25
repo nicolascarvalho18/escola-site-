@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor</title>
+    <link rel="stylesheet" href="professor.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Login do Professor</h2>
+        <form id="loginForm">
+            <label for="ra">RA:</label>
+            <input type="text" id="ra" required><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="erro" style="color:red;"></p>
+    </div>
+
+    <div class="painel-container" id="painelContainer" style="display:none;">
+        <h2 id="boasVindas"></h2>
+        <h3>Horários de Aulas</h3>
+        <div id="horarios">
+            <ul>
+                <li>Segunda-feira: 08:00 - 10:00 - Matemática</li>
+                <li>Terça-feira: 14:00 - 16:00 - Física</li>
+                <li>Quarta-feira: 10:00 - 12:00 - Química</li>
+            </ul>
+        </div>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="js2.js"></script>
+</body>
+</html>

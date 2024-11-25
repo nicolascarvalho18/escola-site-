@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Login do Aluno</h2>
+        <form id="loginForm">
+            <label for="ra">RA:</label>
+            <input type="text" id="ra" required><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="erro" style="color:red;"></p>
+    </div>
+
+    <div class="painel-container" id="painelContainer" style="display:none;">
+        <h2 id="boasVindas"></h2>
+        <h3>Notas e Materiais</h3>
+        <div id="materias">
+            <ul>
+                <li>Matéria 1: Nota 9.0</li>
+                <li>Matéria 2: Nota 8.5</li>
+                <li>Matéria 3: Nota 7.8</li>
+            </ul>
+        </div>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
